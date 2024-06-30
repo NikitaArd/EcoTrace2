@@ -1,3 +1,6 @@
+import BoxMoving from "../assets/Box-moving-2.svg";
+
+
 export default function Home() {
   return (
     <div class="h-screen flex items-center justify-center">
@@ -28,10 +31,10 @@ export default function Home() {
             </a>
           </div>
         </div>
-        {/* <img
-          src="{% static 'img/Box-moving-2.svg' %}"
+        <img
+          src={BoxMoving}
           class="absolute max-w-80 bottom-0 right-52"
-        /> */}
+        />
       </section>
     </div>
   );
