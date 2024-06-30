@@ -1,5 +1,7 @@
 import BoxMoving from "../assets/Box-moving-2.svg";
 
+import { Link } from "react-router-dom";
+
 
 export default function Home() {
   return (
@@ -21,14 +23,14 @@ export default function Home() {
           </div>
 
           <div>
-            <a href="{% url 'main:learn-more' %}">
+            <Link to="learn-more">
               <button
                 type="button"
                 class="text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-base px-6 py-3 text-center me-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800"
               >
                 Learn more
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <img
